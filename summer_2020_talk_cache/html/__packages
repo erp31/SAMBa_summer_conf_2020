@@ -1,0 +1,16 @@
+base
+dplyr
+kableExtra
+ggplot2
+igraph
+PhDutils
+animation
+tidyr
+gganimate
+purrr
+ggpubr
+nlme
+mgcv
+ggimage
+colortools
+xaringanthemer
