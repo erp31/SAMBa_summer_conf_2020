@@ -1,6 +1,7 @@
 ## Here you can access the slides I presented at the SAMBa Summer Conference 2020.
 
 [Link to slides](/summer_2020_talk.html)
+
 ```
 ## CSS styles
 <style>
