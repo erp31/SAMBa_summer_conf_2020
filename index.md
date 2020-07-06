@@ -1,9 +1,7 @@
-## Here you can access the slides I presented at the SAMBa Summer Conference 2020.
+## SAMBa Summer Conference 2020 Presentation
 
-[Link to slides](/summer_2020_talk.html)
+[Access the slides](/summer_2020_talk.html)
 
-```
-## CSS styles
 <style>
 .resp-container {
     position: relative;
@@ -21,13 +19,9 @@
 }
 </style>
 
-
-## html iframe to embed the slide.
-
 <div class="resp-container">
-    <iframe class="testiframe" src="https://erp31.github.io/SAMBa_summer_conf_2020/use_master.html">
+    <iframe class="testiframe" src="https://erp31.github.io/SAMBa_summer_conf_2020/summer_2020_talk.html">
 ...
     </iframe>
 </div>
 
-```
