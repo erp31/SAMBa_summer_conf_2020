@@ -173,7 +173,10 @@ If you tie all of this done then here’s a method of finding the optimal scheme
 
 
 
-&lt;iframe src="DP_paths.html" width="900" height="600" scrolling="no" seamless="seamless" frameBorder="0"&gt; &lt;/iframe&gt;
+&lt;!-- &lt;iframe src="DP_paths.html" width="900" height="600" scrolling="no" seamless="seamless" frameBorder="0"&gt; &lt;/iframe&gt; --&gt;
+.center[
+![](./img/DP_paths.gif)&lt;!-- --&gt;
+]
 
 
 
@@ -199,7 +202,7 @@ Start at the final stage
 &lt;br&gt;
 ]
 .right-column[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -222,7 +225,7 @@ Start at the final stage
 For every state, calculate the optimal choice of dose and store it
 ]
 .right-column[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -234,7 +237,7 @@ We calculate the posterior expected loss associated with choosing each dose and 
 
 ## Continue backwards through the stages, calling in previously calculated values
 
-![](summer_2020_talk_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
 
 ???
 
@@ -247,12 +250,12 @@ count: false
 ## Continue backwards through the stages, calling in previously calculated values
 
 .pull-left[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
 ]
 --
 
 .pull-right[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -268,7 +271,7 @@ count:false
 
 ## Continue backwards through the stages, calling in previously calculated values
 
-![](summer_2020_talk_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-17-1.png)&lt;!-- --&gt;
 
 ???
 
@@ -319,13 +322,13 @@ The result is the dose escalation scheme that is optimal with respect to the cho
 
 --
 
-&lt;img src="img_summer2020/tick.png" style="position:absolute; width:5%; left:75%; top:37%;"&gt;
-&lt;img src="img_summer2020/tick.png" style="position:absolute; width:5%; left:75%; top:42%;"&gt;
-&lt;img src="img_summer2020/tick.png" style="position:absolute; width:5%; left:75%; top:47%;"&gt;
+&lt;img src="img/tick.png" style="position:absolute; width:5%; left:75%; top:37%;"&gt;
+&lt;img src="img/tick.png" style="position:absolute; width:5%; left:75%; top:42%;"&gt;
+&lt;img src="img/tick.png" style="position:absolute; width:5%; left:75%; top:47%;"&gt;
 
 --
 
-&lt;img src="img_summer2020/cross.png" style="position:absolute; width:5%; left:70%; top:55%;"&gt;
+&lt;img src="img/cross.png" style="position:absolute; width:5%; left:70%; top:55%;"&gt;
 
 ???
 
@@ -364,7 +367,7 @@ So can we reduce the amount of computation required?
 # We summarise the data with the posterior distribution
 
 .pull-left[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-18-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-19-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -374,14 +377,14 @@ We summarise the data observed in the trial with the posterior distribution for 
 ---
 
 count: false
-background-image: url(img_summer2020/arrow.png), url(imgs/ocrug_logo.png)
+background-image: url(img/arrow.png),
 background-position: 48% 50%, 
 background-size: 5%
 
 # We summarise the data with the posterior distribution
 
 .pull-left[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-19-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -390,7 +393,7 @@ background-size: 5%
 
 &lt;!-- &lt;img src="img_summer2020/post_funs.gif" style="position:absolute; width:75%; left:75%; top:37%;"&gt; --&gt;
 
-&lt;img src="img_summer2020/post_funs.gif" width="90%" /&gt;
+&lt;img src="img/post_funs.gif" width="90%" /&gt;
 ]
 
 
@@ -403,7 +406,7 @@ This suggests that we might be able to work with a sample of the data sets.
 
 ### Given the observed data our beliefs about the model parameter can be summarised with a gamma distribution
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -418,7 +421,7 @@ Further, we can approximate the posterior with a gamma distribution - this figur
 # Now we can represent the state space in 2D
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -433,7 +436,7 @@ So this means we can represent a data set with two parameters; the parameters th
  
 .center[
 
-![](summer_2020_talk_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -461,7 +464,7 @@ To reduce the total number of calculations required to obtain an optimal dose es
 # Previously, we stored the decision at every state
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-28-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -473,7 +476,7 @@ But previously we stored the decision at every state, and used those values in c
 # What's the optimal decision at out-of-sample states?
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-28-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-29-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -485,7 +488,7 @@ So how do we know what the optimal decision is at out-of-sample states?
 ### What's the posterior expected loss for each dose at the out-of-sample states?
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-29-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -517,7 +520,7 @@ Use a model to predict the posterior expected loss at each dose based on paramet
 
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-32-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-33-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -559,7 +562,7 @@ Fairly easily in R using Simon Wood's mgcv package
 &lt;!-- Fitted GAM for `\(\omega_4\)` --&gt;
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-34-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-35-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -581,7 +584,7 @@ The output of which is something along these lines..so we can predict the value 
 # What's the optimal decision at out-of-sample states?
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-35-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-36-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -593,13 +596,13 @@ So we wanted to fill in this question mark..
 ## Use the fitted GAMs to fill in the gaps
 
 .pull-left[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-36-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-37-1.png)&lt;!-- --&gt;
 ]
 .pull-right[
 
 
 
-![](summer_2020_talk_files/figure-html/unnamed-chunk-39-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-40-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -615,13 +618,13 @@ we have six fitted models, one for the expected loss associated with choosing ea
 ## Use the fitted GAMs to fill in the gaps
 
 .pull-left[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-40-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
 ]
 
 --
 
 .pull-right[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-42-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -637,11 +640,11 @@ count:false
 ## Use the fitted GAMs to fill in the gaps
 
 .pull-left[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-42-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-43-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-43-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-44-1.png)&lt;!-- --&gt;
 ]
 
 ???
@@ -653,7 +656,7 @@ count:false
 # Calculate and store the optimal decision at every state
 
 .center[
-![](summer_2020_talk_files/figure-html/unnamed-chunk-44-1.png)&lt;!-- --&gt;
+![](summer_2020_talk_files/figure-html/unnamed-chunk-45-1.png)&lt;!-- --&gt;
 ]
 
 ???
