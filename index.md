@@ -20,7 +20,7 @@
 </style>
 
 <div class="resp-container">
-    <iframe class="testiframe" src="https://erp31.github.io/SAMBa_summer_conf_2020/use_gh-pages.html">
+    <iframe class="testiframe" src="https://erp31.github.io/SAMBa_summer_conf_2020/use_master.html">
 ...
     </iframe>
 </div>
